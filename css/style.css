@@ -1,0 +1,30 @@
+/* ===== TEMA DARK BLUE ===== */
+:root{color-scheme:dark}
+body{background:linear-gradient(160deg,#050b1a 0%,#0a1630 55%,#0b1d3f 100%) fixed!important;color:#cfe0ff!important}
+
+/* Teks */
+[class*="text-[#"]{color:#cfe0ff!important}
+[class*="text-[#b76e79]"],[class*="text-[#e8457a]"]{color:#6cb2ff!important}
+.rg{background-image:linear-gradient(90deg,#60a5fa,#bfdbfe,#60a5fa)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important}
+
+/* Kartu, tombol, dan latar */
+.bg-white,[class*="bg-white/"]{background-color:rgba(15,27,54,.85)!important}
+.border-white,[class*="border-[#"]{border-color:#27467d!important}
+[class*="bg-[#e8457a]"],[class*="bg-[#b76e79]"]{background-color:#2563eb!important}
+[class*="from-[#e8457a]"]{background-image:linear-gradient(90deg,#1d4ed8,#60a5fa)!important}
+[class*="from-[#f7c6cf]"]{background-image:linear-gradient(135deg,#1e3a8a,#2563eb)!important}
+[class*="bg-[#f06a95]"]{background-color:#3b82f6!important}
+[class*="bg-[#f7d6a8]"]{background-color:#bfdbfe!important}
+[class*="hover:bg-[#ffe3e8]"]:hover{background-color:#1c2f55!important}
+[class*="shadow-"]{--tw-shadow-color:rgba(37,99,235,.35)!important}
+
+/* Kertas surat */
+.paper{background:repeating-linear-gradient(#0f1b36,#0f1b36 31px,#1c2f55 32px)!important;border-color:#27467d!important}
+
+/* ===== BINTANG ===== */
+.stars{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.star{position:absolute;border-radius:50%;background:#dbeafe;box-shadow:0 0 6px 1px rgba(147,197,253,.7);animation:twinkle 3s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:.15;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+.shoot{position:absolute;width:120px;height:2px;border-radius:2px;background:linear-gradient(90deg,#dbeafe,rgba(191,219,254,0));opacity:0;animation:shoot 8s linear infinite}
+@keyframes shoot{0%{opacity:0;transform:translate(0,0) rotate(-35deg)}2%{opacity:1}12%{opacity:0;transform:translate(-420px,300px) rotate(-35deg)}100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.star,.shoot{animation:none}}
