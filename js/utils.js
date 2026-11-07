@@ -29,7 +29,7 @@ const Title=({sub,title})=>html`<${Reveal} cls="text-center mb-10"><p class="fon
 const Sec=({id,children,cls=""})=>html`<section id=${id} class=${"relative z-10 px-5 py-24 flex flex-col items-center justify-center "+cls}>${children}</section>`;
 
 /* Bintang */
-const Stars=({n=90})=>{
+const Stars=({n=(window.innerWidth<640?50:90)})=>{
   const st=useMemo(()=>Array.from({length:n},()=>({
     x:Math.random()*100,y:Math.random()*100,s:Math.random()*2+1,
     d:2+Math.random()*4,dl:Math.random()*5,o:.4+Math.random()*.6
